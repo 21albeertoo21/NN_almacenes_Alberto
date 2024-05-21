@@ -10,7 +10,7 @@ async function PublicarPedido() {
             for (let i = 0; i < productos.length; i++) {
                 delete productos[i].img;
                 delete productos[i].price;
-                delete productos[i].title;
+                //delete productos[i].title;
                 delete productos[i].size;
             }
             if(productos && productos.length > 0){
