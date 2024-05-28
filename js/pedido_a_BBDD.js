@@ -1,7 +1,7 @@
 document. getElementById("confirmar-compra").addEventListener("click", async ()=> {
     const carrito = JSON.parse(localStorage.getItem("products"));
     if(carrito && carrito.length > 0){
-        const res = await fetch("http://steady-mermaid-8a8d30.netlify.app/carrito","https://steady-mermaid-8a8d30.netlify.app/carrito",{
+        const res = await fetch("http://steady-mermaid-8a8d30.netlify.app/carrito",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
