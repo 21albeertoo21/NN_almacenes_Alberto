@@ -7,13 +7,13 @@ document. getElementById("confirmar-compra").addEventListener("click", async ()=
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(carrito)
+            body: "body"//JSON.stringify(carrito)
         });
         if(res.ok){
             console.log("Compra realizada");
         }
         else{
-            //window.location.href = "fallo_conexion.html";
+            window.location.href = "fallo_conexion.html";
         }
     }
 });
