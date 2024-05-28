@@ -1,7 +1,7 @@
 document. getElementById("confirmar-compra").addEventListener("click", async ()=> {
     const carrito = JSON.parse(localStorage.getItem("products"));
     if(carrito && carrito.length > 0){
-            const res = await fetch("https://localhost:4000/carrito",{
+            const res = await fetch("http://localhost:4000/carrito",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
