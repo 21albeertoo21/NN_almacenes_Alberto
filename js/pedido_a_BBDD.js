@@ -1,7 +1,7 @@
 document. getElementById("confirmar-compra").addEventListener("click", async ()=> {
     const carrito = JSON.parse(localStorage.getItem("products"));
     if(carrito && carrito.length > 0){
-            const res = await fetch("https://tambori.dsic.upv.es/carrito/comprar",{
+            const res = await fetch("http://tambori.dsic.upv.es:5432/carrito/comprar",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -17,4 +17,4 @@ document. getElementById("confirmar-compra").addEventListener("click", async ()=
     }
 });
 
-//https://nn-almacenes-inteligentes.netlify.app/carrito-comprar
+//https://nn-almacenes-inteligentes.netlify.app/carrito/comprar
