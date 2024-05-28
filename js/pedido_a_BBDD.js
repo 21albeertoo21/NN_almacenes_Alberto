@@ -4,7 +4,6 @@ document. getElementById("confirmar-compra").addEventListener("click", async ()=
     if(carrito && carrito.length > 0){
             const res = await fetch("http://localhost:4000/carrito",{
             method: "POST",
-            mode: "no-cors",
             headers: {
                 "Content-Type": "application/json"
             },
