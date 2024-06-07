@@ -1,7 +1,7 @@
 document. getElementById("confirmar-compra").addEventListener("click", async ()=> {
     const carrito = JSON.parse(localStorage.getItem("products"));
     if(carrito && carrito.length > 0){
-            const res = await fetch("https://tambori.dsic.upv.es/carrito/comprar",{
+            const res = await fetch("url-del-API-REST/carrito/comprar",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

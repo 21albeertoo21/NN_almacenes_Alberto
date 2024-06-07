@@ -1,9 +1,9 @@
 console.clear();
 
 import database from "../database.js";
-import express from 'express';
-import morgan from 'morgan';
-import cors from 'cors';
+import express from 'express'; 
+import morgan from 'morgan'; 
+import cors from 'cors'; 
 
 //Configuración inicial
 const app = express();
@@ -21,7 +21,7 @@ app.use(express.json());
 //Rutas
 app.get("/envios", async (req, res) => {
     const connection = database;
-    const result = await connection.query("SELECT * FROM envio");
+    const result = await connection.query("SELECT * FROM pedido");
     res.json(result);
 });
 
